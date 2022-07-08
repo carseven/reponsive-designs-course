@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+footer {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+header p {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Para evitar que el icono este en cursiva */
+h1::first-letter {
+  font-style: normal;
+}
+
+h2::after {
+  display: inline-block;
+  content: "AFTER";
+  font-size: 18px;
+  background-color: #bee77b;
+  padding: 5px 10px;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+h2 {
+  font-size: 40px;
+  padding: 0px 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 30px;
+  transform: upperCase;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* Los li normalmente tiene 16px de font-size */
+li {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Como el padre es es la pagina entera, al usar width 100%, 
+la imagen se ajusta al ancho de la pagina */
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.top-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 40px;
+}
+
+.related {
+  background-color: #f7f7f7;
+  list-style: none;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 20px 40px;
+  width: 50%;
+}
+
+.related-author {
+  font-style: italic;
+  color: #a7a7a7;
+}
+
+li:first-child {
+  margin-left: 0px;
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:hover {
+  background-color: #f7f7f7;
+}
+
+li:nth-child(even) {
+  color: #0a0a0a;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+#copyright {
+  font-style: italic;
+}
